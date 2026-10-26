@@ -16,8 +16,6 @@ URL:     https://github.com/AyuGram/%{appname}
 Summary: Desktop Telegram client with good customization and Ghost mode
 Source0: %{url}/releases/download/v%{version}/%{appname}-%{version}-full.tar.gz
 
-# cld3: fall back to FindProtobuf when protobuf CMake config is absent
-Patch0:  findprotobuf_fix.patch
 
 # Linking needs >8 GB RAM
 ExclusiveArch: aarch64
