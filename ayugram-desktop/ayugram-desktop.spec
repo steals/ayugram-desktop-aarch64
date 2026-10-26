@@ -41,6 +41,7 @@ BuildRequires: cmake(fmt)
 BuildRequires: cmake(range-v3)
 BuildRequires: cmake(tde2e)
 BuildRequires: cmake(tg_owt)
+BuildRequires: tlottie-static
 BuildRequires: cmake(tl-expected)
 
 BuildRequires: pkgconfig(alsa)

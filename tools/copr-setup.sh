@@ -14,7 +14,7 @@ copr-cli create "$name" \
   --description "Unofficial AyuGram Desktop builds for Fedora (aarch64)" \
   --instructions "sudo dnf copr enable $project && sudo dnf install ayugram-desktop (requires RPM Fusion free)"
 
-for pkg in tg_owt ayugram-desktop; do
+for pkg in tg_owt tlottie ayugram-desktop; do
   copr-cli add-package-scm "$name" \
     --name "$pkg" \
     --clone-url "$clone_url" \
