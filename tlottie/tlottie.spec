@@ -64,5 +64,5 @@ cargo test --release --offline --lib --features c-api -- \
 %{_libdir}/lib%{name}.a
 
 %changelog
-* Mon Oct 26 2026 steals <steals@users.noreply.github.com> - 0.1.0-1.20260911git31f1b54
+* Mon Oct 26 2026 Eugene <e.rusalev@gmail.com> - 0.1.0-1.20260911git31f1b54
 - Initial package, commit pinned by tdesktop 7.2.x build environment

@@ -35,6 +35,8 @@ BuildRequires: cmake(Qt6Svg)
 BuildRequires: cmake(Qt6WaylandClient)
 BuildRequires: cmake(Qt6Widgets)
 BuildRequires: cmake(Qt6WidgetsPrivate)
+BuildRequires: qt6-qtbase-private-devel
+BuildRequires: qt6-qtbase-static
 BuildRequires: cmake(KF6CoreAddons)
 BuildRequires: cmake(ada)
 BuildRequires: cmake(fmt)
@@ -107,7 +109,7 @@ Unofficial build, not affiliated with Radolyn Labs.
 %autosetup -n %{appname}-%{version}-full -p1
 
 # Unbundle everything available in Fedora except minizip
-rm -rf Telegram/ThirdParty/{GSL,QR,dispatch,expected,fcitx5-qt,hime,hunspell,kimageformats,lz4,nimf,range-v3,xxHash}
+rm -rf Telegram/ThirdParty/{QR,expected,fcitx-qt5,fcitx5-qt,hime,hunspell,jemalloc,kimageformats,lz4,nimf,range-v3,xxHash}
 
 %build
 %cmake -G Ninja \
