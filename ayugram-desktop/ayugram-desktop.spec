@@ -80,7 +80,6 @@ BuildRequires: pkgconfig(xcb-screensaver)
 BuildRequires: boost-devel
 BuildRequires: cmake
 BuildRequires: desktop-file-utils
-BuildRequires: ffmpeg-devel
 BuildRequires: gcc
 BuildRequires: gcc-c++
 BuildRequires: libappstream-glib

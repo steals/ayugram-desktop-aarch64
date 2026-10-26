@@ -23,7 +23,7 @@
 Name: tg_owt
 Version: 0
 # 100+ keeps this build ahead of RPM Fusion tg_owt in the same chroot
-Release: 100.%{date}git%{shortcommit0}%{?dist}
+Release: 101.%{date}git%{shortcommit0}%{?dist}
 
 # Library and 3rd-party bundled modules licensing:
 # * tg_owt - BSD-3-Clause -- main tarball;
@@ -78,7 +78,6 @@ BuildRequires: pkgconfig(xtst)
 BuildRequires: pkgconfig(openh264)
 
 BuildRequires: cmake
-BuildRequires: ffmpeg-devel
 BuildRequires: gcc
 BuildRequires: gcc-c++
 BuildRequires: ninja-build
@@ -131,7 +130,6 @@ Requires: pkgconfig(xfixes)
 Requires: pkgconfig(xrandr)
 Requires: pkgconfig(xrender)
 Requires: pkgconfig(xtst)
-Requires: ffmpeg-devel
 
 %description devel
 %{summary}.
@@ -192,6 +190,9 @@ cp -f -p src/third_party/libyuv/PATENTS legal/PATENTS.libyuv
 %{_libdir}/lib%{name}.a
 
 %changelog
+* Mon Oct 26 2026 Eugene <e.rusalev@gmail.com> - 0-101.20260803git19d51d3
+- Build against ffmpeg-free instead of RPM Fusion
+
 * Mon Oct 26 2026 Eugene <e.rusalev@gmail.com> - 0-100.20260803git19d51d3
 - Import RPM Fusion rawhide spec for COPR, bump Release above RPM Fusion
 

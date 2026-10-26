@@ -6,15 +6,10 @@ project=${1:?owner/project}
 clone_url=${2:?git clone url}
 name=${project#*/}
 
-rpmfusion_rel='https://download1.rpmfusion.org/free/fedora/releases/$releasever/Everything/$basearch/os/'
-rpmfusion_upd='https://download1.rpmfusion.org/free/fedora/updates/$releasever/$basearch/'
-
 copr-cli create "$name" \
   --chroot fedora-43-aarch64 \
   --chroot fedora-44-aarch64 \
   --chroot fedora-45-aarch64 \
-  --repo "$rpmfusion_rel" \
-  --repo "$rpmfusion_upd" \
   --enable-net on \
   --description "Unofficial AyuGram Desktop builds for Fedora (aarch64)" \
   --instructions "sudo dnf copr enable $project && sudo dnf install ayugram-desktop (requires RPM Fusion free)"
