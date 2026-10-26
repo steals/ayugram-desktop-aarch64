@@ -53,7 +53,6 @@ BuildRequires: pkgconfig(glibmm-2.68) >= 2.76.0
 BuildRequires: pkgconfig(gobject-2.0)
 BuildRequires: pkgconfig(gobject-introspection-1.0)
 BuildRequires: pkgconfig(hunspell)
-BuildRequires: pkgconfig(jemalloc)
 BuildRequires: pkgconfig(libavcodec)
 BuildRequires: pkgconfig(libavfilter)
 BuildRequires: pkgconfig(libavformat)
