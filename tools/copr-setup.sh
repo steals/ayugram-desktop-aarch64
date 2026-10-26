@@ -7,7 +7,6 @@ clone_url=${2:?git clone url}
 name=${project#*/}
 
 copr-cli create "$name" \
-  --chroot fedora-43-aarch64 \
   --chroot fedora-44-aarch64 \
   --chroot fedora-45-aarch64 \
   --enable-net on \
